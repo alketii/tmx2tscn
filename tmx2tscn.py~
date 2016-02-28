@@ -90,7 +90,7 @@ for layer in data['layers']:
     for y in range(map_height):
         for x in range(map_width):
             if layers_data[tile_count] > 0:
-                f.write('[node name="'+tile_names[str(layers_data[tile_count])]+'_'+str(tile_count_used)+'" parent="'+layer_name+'" instance=ExtResource( '+str(layers_data[tile_count])+' )]\n\ntransform/pos = Vector2( '+str(tile_x+origin_offset_x)+', '+str(tile_y+origin_offset_y)+' )\n\n')
+                f.write('[node name="'+tile_names[str(layers_data[tile_count)]+'_'+str(tile_count_used)+'" parent="'+layer_name+'" instance=ExtResource( '+str(layers_data[tile_count])+' )]\n\ntransform/pos = Vector2( '+str(tile_x+origin_offset_x)+', '+str(tile_y+origin_offset_y)+' )\n\n')
                 tile_count_used += 1
             tile_count += 1
             tile_x += tile_width
